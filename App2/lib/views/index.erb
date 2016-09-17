@@ -1,0 +1,48 @@
+<h1><%
+  @countries.each do | country |
+    %>
+  The capital of <%= country[:country] %> is <%= country[:capital]%> <br>
+<%end%>
+
+</h1>
+
+<script>
+function myFunction() {
+document.getElementById("demo").innerHTML = "Ruby uses both numbers and strings. Fill in a string.";
+}
+</script>
+
+
+<body>
+<form>
+<input type="text" id="weight" placeholder="Input">
+<input type="button" id="calculate" value="Done">
+
+</form>
+
+</form>
+<div>
+<span id="display_value"></span>
+<span id="display_message"></span>
+
+</div>
+
+<script type="text/javascript">
+$(document).ready(function () {
+$('#calculate').click(function () {
+  var String
+  if (String.isString(String))
+  $('#display_value').html('You are welcome to continue');
+  else
+  $('#display_message').html('Try again'
+);
+});
+});
+</script>
+
+</body>
+
+<p id="demo"/p>
+
+<button type="button" onclick="myFunction()">Welcome to Level 1 of the Ruby journey. Click to find your task.</button>
+</html>
